@@ -2,7 +2,7 @@ def is_num(some_chars):
     if some_chars[0].isnumeric():
         return int(some_chars[0])
 
-    nums_map = {
+    nums_dict = {
         "one": 1,
         "two": 2,
         "three": 3,
@@ -14,7 +14,7 @@ def is_num(some_chars):
         "nine": 9,
     }
 
-    for k, v in nums_map.items():
+    for k, v in nums_dic.items():
         if some_chars[0 : len(k)] == k:
             return v
     return 0
